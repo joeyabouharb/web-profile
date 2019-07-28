@@ -1,0 +1,7 @@
+mixin breadcrumbs(id, ...crumbs)
+    nav.breadcrumb.has-margin-top.has-padding.has-background-black.has-radius.shadowed(aria-label="breadcrumbs")
+        ul(id=id)
+            each item in crumbs
+                li
+                    a.has-text-light(href=item+'pug')=item
+

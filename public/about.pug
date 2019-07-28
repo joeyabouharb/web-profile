@@ -1,0 +1,122 @@
+extends layout
+block content
+    .section
+        include breadcrumbs
+        .has-margin-top
+            +breadcrumbs('breadcrumbs', 'home', 'about')
+        .columns
+            .column.has-radius.shadowed.is-stretched.has-background-black.is-overflow.disable-selection
+                .section
+                    .container
+                        #Superpower
+                            h3.title.is-3 Coding Proficencies! 
+                            .is-flex.is-row-flexed.has-text-white.is-centered-flex
+                                figure.is-col-flexed.is-centered-flex.has-padding.has-radius.shadowed
+                                    img.image.is-48x48(
+                                        src="./res/img/python.png"
+                                        alt="python logo"
+                                    )
+                                    p.has-text-centered <b>Language: </b> python
+                                    p.has-text-centered <b>For: </b>
+                                        | Scripting for backend
+                                        | logic, terminal applications and
+                                        | Server-Side Frameworks like Flask
+                                figure.is-col-flexed.is-centered-flex.has-radius.shadowed
+                                    img.image.is-48x48(
+                                        src="./res/img/node.png"
+                                        alt="node logo"
+                                    )
+                                    p.has-text-centered <b>Language: </b>
+                                        | Javascript/ Node
+                                    p.has-text-centered 
+                                        <b>For: </b>
+                                        | Full stack web development
+                                        | using express, sequelize or mongo as well as
+                                        | Front End Frameworks like React, Angular
+                                figure.is-col-flexed.is-centered-flex.has-radius.shadowed
+                                    img.image.is-48x48(
+                                        src="./res/img/ts.png"
+                                        alt="typescript logo"
+                                    )
+                                    p.has-text-centered <b>Language: </b>
+                                        | TypeScript
+                                    p.has-text-centered <b>For: </b>
+                                        | writing javascript applications,
+                                        | including:<br/> Node.js servers as well as Angular and React SPAs.
+                                figure.is-col-flexed.is-centered-flex.has-radius.shadowed
+                                    img.image.is-48x48(
+                                        src="./res/img/logo-net.jpg"
+                                        alt=".NET logo"
+                                    )
+                                    p.has-text-centered <b>Language: </b> C# / .NET Core
+                                    p.has-text-centered <b>For: </b>
+                                        | ASP.NET core for Full Stack
+                                        | web-apps as well as SQL Server and Entity Framework Core
+                                figure.is-col-flexed.is-centered-flex.has-radius.shadowed
+                                    img.image.is-48x48(
+                                        src="./res/img/kisspng-java-development-kit-software-development-kit-comp-programming-language-icon-5b4b9cb1e74f20.0073080715316819699475.jpg"
+                                        alt="Java Logo"
+                                    )
+                                    p.has-text-centered <b>Language: </b> Java
+                                    p.has-text-centered <b>For: </b>                                            | Writing Spring Boot for Full stack
+                                        | Web apps including REST endpoints, as well as
+                                        | some Android Application development through Android Studio
+                        #Learn
+                            h3.title.is-3 Would love to learn!
+                            .is-flex.is-row-flexed.has-text-white.is-centered-flex
+                                figure.is-col-flexed.is-centered-flex.has-radius.shadowed
+                                    img.image.is-48x48(
+                                        src="./res/img/go-lang.jpg"
+                                        alt="golang logo"
+                                    )
+                                    p.has-text-centered <b>Language: </b> Go
+                                    p.has-text-centered <b>For: </b>
+                                        | Creating Web Servers, <br/>
+                                        | static sites with Hugo 
+                                        | and Web assembly for the future.<br/>
+                                figure.is-col-flexed.is-centered-flex.has-radius.shadowed
+                                    img.image.is-48x48(
+                                        src="./res/img/dart.png"
+                                        alt="dart logo"
+                                    )
+                                    p.has-text-centered <b>Language: </b> Dart
+                                    p.has-text-centered <b>For: </b>
+                                        | Mobile Application Development and
+                                        | Front end web applications
+                                figure.is-col-flexed.is-centered-flex.has-radius.shadowed
+                                    img.image.is-48x48(
+                                        src="./res/img/scala.png"
+                                        alt="scala logo"
+                                    )
+                                    p.has-text-centered <b>Language: </b> Scala
+                                    p.has-text-centered <b>For: </b>
+                                        | Developing and working on data collection,
+                                        | processing and analysis systems.
+                        #History
+                            h3.title.is-3 History
+                        #Contact
+                            h3.title.is-3 Links
+            .column.is-one-fifth.has-margin
+                .is-sticky
+                    .menu.has-background-black.shadowed.has-radius
+                        p.menu-label.has-text-white
+                            | Properties
+                        ul.menu-list
+                            li
+                                a.has-text-light(
+                                    href="#Superpower"
+                                ) 🎉 Super-powers
+                            li
+                                a.has-text-light(
+                                    href="#Learn"
+                                ) 💡 Future Learning
+                            li
+                                a.has-text-light(
+                                    href="#History"
+                                ) 🕰️ History
+                            li
+                                a.has-text-info(
+                                    href="#Contact"
+                                ) 💬 Contact
+
+
