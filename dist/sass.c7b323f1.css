@@ -9157,16 +9157,28 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+/* flex helpers */
 .is-stretched {
   flex: 1;
 }
 
-.has-margin-top {
-  margin-top: 2rem;
+.is-between {
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.is-mono-font {
-  font-family: "PT Mono", monospace;
+.is-col-flexed {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+.is-row-flexed {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 
 .push-to-start {
@@ -9174,6 +9186,62 @@ label.panel-block:hover {
   margin-top: 2rem;
 }
 
+.center-self {
+  align-self: center;
+}
+
+.is-centered-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.is-flex > figure {
+  border: 0.1rem solid aliceblue;
+  height: 24rem;
+  width: 15rem;
+  margin: 0.6rem;
+  justify-content: center;
+  min-height: 15rem;
+}
+
+.has-margin-top {
+  margin-top: 2rem;
+}
+
+.has-margin {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .has-margin-desktop {
+    margin: 1rem;
+  }
+}
+.has-padding {
+  padding: 1rem;
+}
+
+.is-serif {
+  font-family: "Merriweather";
+}
+
+.is-mono-font {
+  font-family: "PT Mono", monospace;
+}
+
+.is-sticky {
+  position: sticky;
+  top: 5%;
+}
+
+.is-overflow {
+  margin-top: 1.5rem;
+  max-height: 120vmin;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
 .is-overflow::-webkit-scrollbar {
   display: none;
 }
@@ -9186,9 +9254,16 @@ label.panel-block:hover {
   -webkit-touch-callout: none;
 }
 
-.is-sticky {
-  position: sticky;
-  top: 5%;
+code {
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+}
+
+pre {
+  background-color: inherit;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .pagination-link {
@@ -9213,42 +9288,8 @@ label.panel-block:hover {
   background-color: #0a0a0a;
 }
 
-.has-margin {
-  margin: 1rem;
-}
-
-.is-overflow {
-  margin-top: 1.5rem;
-  max-height: 100vmin;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-}
-
-code {
-  padding: 0;
-  margin: 0;
-  background-color: inherit;
-}
-
-.is-flex > figure {
-  border: 0.1rem solid aliceblue;
-  width: 15rem;
-  margin: 0.6rem;
-  justify-content: center;
-  min-height: 15rem;
-}
-
 .has-background-dark-green {
   background-color: #298200;
-}
-
-.is-col-flexed {
-  display: flex;
-  flex-direction: column;
-  flex-flow: column;
-  flex-wrap: wrap;
 }
 
 .has-radius-img {
@@ -9256,36 +9297,12 @@ code {
   margin: 1rem 1rem 1rem;
 }
 
-.is-serif {
-  font-family: "Merriweather";
-}
-
 .has-radius {
   border-radius: 1rem;
 }
 
-.has-padding {
-  padding: 1rem;
-}
-
-.is-row-flexed {
-  display: flex;
-  flex-direction: row;
-  flex-flow: row;
-  flex-wrap: wrap;
-}
-
 .img-size {
   width: 200px;
-}
-
-.center-self {
-  align-self: center;
-}
-
-.is-centered-flex {
-  justify-content: center;
-  align-items: center;
 }
 
 .shadowed {
@@ -9294,15 +9311,20 @@ code {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.is-between {
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 .is-shadow-top {
   -webkit-box-shadow: 1px -5px 11px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px -5px 11px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px -5px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+p, li, pre {
+  font-size: 17px;
+}
+
+.is-lang {
+  font-size: 24px;
+  font-family: "Merriweather";
+  color: #92FF00;
 }
 
 @-webkit-keyframes slideDown {

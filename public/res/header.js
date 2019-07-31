@@ -1,4 +1,6 @@
+"use strict";
 import Headroom from 'headroom.js'
+
 (() => {
     console.log('don\'t be cheeky 🥺')
     const burger = document.querySelector('.burger');

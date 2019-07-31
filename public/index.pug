@@ -11,24 +11,24 @@ block content
                     h2.title.is-2.is-serif.has-text-centered Joey: Junior App Developer
                     h5.subtitle.is-5.has-text-centered
                         |<em>Security Bootcamp Dip.<br/> @Coderacademy</em>
-                .card-content
-                    pre.section.is-paddingless.has-text-light.has-background-black
+                .card-content.section
+                    pre.container.is-paddingless.has-text-light
                         code.is-mono-font.has-background-black. 
-                            const joey = ({...}) => {
-                                return {
-                                    about: <a href="about.pug"> () => about </a>,
-                                    blog: <a href="blog.pug"> () => blog </a>,
-                                    projects: <a href="projects.pug"> () => projects </a>,
-                                    contact: <a href="about.pug#Contact"> () => contact </a>,
-                                };
+                            const joey = () =&gt; {
+                              return {
+                                about: <a href="about.pug"> () => about </a>,
+                                blog: <a href="blog.pug"> () => blog </a>,
+                                projects: <a href="projects.pug"> () => projects </a>,
+                                contact: <a href="about.pug#Contact"> () => contact </a>,
+                              };
                             };
-                            const roles = () => {
-                                return [
-                                        'full-stack',
-                                        'web dev',
-                                        'scripting',
-                                        'security analysis',
-                                        'front-end'
-                                    ];
+                            const roles = () =&gt; {
+                              return [
+                                'full-stack',
+                                'web dev',
+                                'scripting',
+                                'security analysis',
+                                'front-end'
+                              ];
                             };
 
