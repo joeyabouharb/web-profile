@@ -1,0 +1,38 @@
+extends ../layouts/layout
+block content
+    main.section
+        .container.is-col-flexed.center-self.is-centered-flex
+            figure.image.img-size.has-margin
+                img.center-self.is-rounded.shadowed(
+                    src="../res/img/profile.jpeg"
+                    alt="profile pic")
+        section.container
+            .has-slight-radius.has-background-black.shadowed.has-padding
+                h1.title.is-3.is-serif.has-text-centered Joey: Junior App Developer
+                .is-flex.is-centered-flex
+                h2.subtitle.is-5.has-text-centered.is-em
+                    | Security Bootcamp Dip.
+                    <br/> @Coderacademy
+                pre.shadowed.disable-selection
+                    code
+                        | const joey = () =&gt; {
+                        |   return {
+                        |     about: <a class="has-text-light" href="about.pug"> () =&gt; about </a>,
+                        |     blog: <a class="has-text-light" href="blog.pug"> () =&gt; blog </a>,
+                        |     projects: <a class="has-text-light" href="projects.pug"> () =&gt; projects </a>,
+                        |     contact: <a class="has-text-light" href="about.pug#contact"> () =&gt; contact </a>,
+                        |   };
+                        | };
+                        | const roles = () =&gt; {
+                        |   return [
+                        |     'Full-Stack',
+                        |     'Server Stack and API Development',
+                        |     'Linux / Windows',
+                        |     'Scripting',
+                        |     'Security and Testing',
+                        |     'Front-End Design'
+                        |     ];
+                        |};
+    script(
+      src="../res/js/highlight.js" defer
+    )

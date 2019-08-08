@@ -1,0 +1,7 @@
+mixin breadcrumbs(id, ...crumbs)
+    nav.breadcrumb.has-padding(aria-label="breadcrumbs")
+        ul(id=id)
+            each item in crumbs
+                li.crumbs
+                    a.crumb-link(href="../pages/"+item+'.pug')=item
+

@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    if !title || !description
+        - var title = 'test'
+        - var description = 'test'
+    head
+        title #{title}
+        meta(
+            charset="UTF-8"
+        )
+        meta(
+            name="Description"
+            content=description
+        )
+        link(
+            href="https://fonts.googleapis.com/css?family=PT+Mono%7CMerriweather%7CMontserrat&display=swap"
+            rel="stylesheet"
+            type="text/css"
+        )
+
+        link(
+                href="../res/sass/index.sass"
+                type="text/css"
+                rel="stylesheet"
+        )
+        meta(
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        )
+        body.has-background-dark
+            .hero.is-fullheight.is-dark
+                    include ../includes/header
+                    block content
+                    include ../includes/footer
+            script(src="../res/js/header.js" defer)

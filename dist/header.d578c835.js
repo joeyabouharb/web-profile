@@ -599,7 +599,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   var nav = document.querySelector('#navMenu');
   burger.addEventListener('click', function () {
     burger.classList.toggle('is-active');
-    nav.classList.toggle('is-active');
+
+    if (nav.classList.contains("bounceIn")) {
+      nav.classList.toggle("bounceOut");
+      nav.classList.remove('bounceIn');
+      setTimeout(function () {
+        nav.classList.remove('is-active');
+      }, 720);
+    } else if (nav.classList.contains("bounceOut")) {
+      nav.classList.toggle('is-active');
+      nav.classList.remove('bounceOut');
+      nav.classList.toggle('bounceIn');
+    } else {
+      nav.classList.toggle('is-active');
+      nav.classList.toggle("bounceIn");
+    }
   });
   var header = document.getElementById('header');
   var headroom = new _headroom.default(header, {
@@ -608,9 +622,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     classes: {
       initial: "animated",
       pinned: "slideInDown",
-      //custom: slideDown
-      unpinned: "slideOutUp" //custom: slideUp
-
+      unpinned: "slideOutUp"
     }
   });
   headroom.init();
@@ -643,7 +655,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38311" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41619" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

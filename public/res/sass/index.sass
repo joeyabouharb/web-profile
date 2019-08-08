@@ -1,8 +1,10 @@
+
 @import "./variables-override.sass"
 @import "./bulma/bulma.sass"
 @import "../../../node_modules/animate.css/animate.min.css"    
 @import "./helpers.sass"
 @import "./nav-animations.sass"
+@import "./highlight.sass"
 @import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
 header
   background-color: $dark
@@ -13,3 +15,9 @@ header
 html
   scroll-behavior: smooth
 
+@media screen and (min-width: 1023px)
+  .bounceOut 
+    -webkit-animation-name: bounceIn
+    animation-name: bounceIn
+    -webkit-animation-duration: 0.4s
+    animation-duration: 0.4s

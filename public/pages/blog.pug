@@ -1,0 +1,98 @@
+extends ../layouts/layout
+block content
+    main.section
+        include ../includes/breadcrumbs
+        .has-margin-top.has-background-black.has-slight-radius
+            +breadcrumbs('breadcrumbs', 'index', 'blog')
+        section.container
+            h2.title.is-1.has-text-centered.has-margin-top Blog
+        .is-flex.is-row-flexed.is-centered-flex-desktop
+            .section-desktop
+                article.card.has-background-black.has-slight-radius.shadowed
+                    .card-header
+                        .card-header-title.is-col-flexed
+                            h3.title.is-4.has-text-centered 
+                                | Typescript with React: Angular Killer? 
+                            .subtitle.is-7.is-stretched.has-text-centered
+                                | By: <em>Joseph Abouharb</em>  
+                    .card-content.is-flex.is-col-flexed.is-centered-flex
+                        p.has-text-white
+                            | In this article I will go through the
+                            | steps on how to set up React with TypeScript Support.
+                            | I will share on my thoughts on what this means going further
+                            | in the front end development scene...<br/>
+                        a.has-text-light.has-text-centered  &lt;&lt; read more &gt;&gt;
+            .section-desktop
+                article.card.has-background-black.has-slight-radius.shadowed
+                    .card-header
+                        .card-header-title.is-col-flexed
+                            h3.title.is-4.has-text-centered 
+                                | My First experience with python
+                            .subtitle.is-7.is-stretched.has-text-centered
+                                | By: <em> Joseph Abouharb </a>
+                    .card-content.is-flex.is-col-flexed.is-centered-flex
+                            p.has-text-white
+                                | What can I say? I absolutely love this language.
+                                | With an elegant syntax, Python is extremely readable and consise.
+                                | I will attempt to discuss how python taught me to be a better programmer
+                                | and also touch upon some of the things I learned...
+                            a.has-text-light.has-text-centered  &lt;&lt; read more &gt;&gt;
+            .section-desktop
+                article.card.has-background-black.has-slight-radius.shadowed
+                    .card-header
+                        .card-header-title.is-col-flexed
+                            h3.title.is-4.has-text-centered 
+                                | My First experience with python
+                            .subtitle.is-7.is-stretched.has-text-centered
+                                | By: <em> Joseph Abouharb </a>
+                    .card-content.is-flex.is-col-flexed.is-centered-flex
+                            p.has-text-white
+                                | What can I say? I absolutely love this language.
+                                | With an elegant syntax, Python is extremely readable and consise.
+                                | I will attempt to discuss how python taught me to be a better programmer
+                                | and also touch upon some of the things I learned...
+                            a.has-text-light.has-text-centered  &lt;&lt; read more &gt;&gt;
+            .section-desktop
+                article.card.has-background-black.has-slight-radius.shadowed
+                    .card-header
+                        .card-header-title.is-col-flexed
+                            h3.title.is-4.has-text-centered 
+                                | My First experience with python
+                            .subtitle.is-7.is-stretched.has-text-centered
+                                | By: <em> Joseph Abouharb </a>
+                    .card-content.is-flex.is-col-flexed.is-centered-flex
+                            p.has-text-white
+                                | What can I say? I absolutely love this language.
+                                | With an elegant syntax, Python is extremely readable and consise.
+                                | I will attempt to discuss how python taught me to be a better programmer
+                                | and also touch upon some of the things I learned...
+                            a.has-text-light.has-text-centered  &lt;&lt; read more &gt;&gt;
+            .section-desktop
+                article.card.has-background-black.has-slight-radius.shadowed
+                    .card-header
+                        .card-header-title.is-col-flexed
+                            h3.title.is-4.has-text-centered 
+                                | My First experience with python
+                            .subtitle.is-7.is-stretched.has-text-centered
+                                | By: <em> Joseph Abouharb </a>
+                    .card-content.is-flex.is-col-flexed.is-centered-flex
+                            p.has-text-white
+                                | What can I say? I absolutely love this language.
+                                | With an elegant syntax, Python is extremely readable and consise.
+                                | I will attempt to discuss how python taught me to be a better programmer
+                                | and also touch upon some of the things I learned...
+                            a.has-text-light.has-text-centered  &lt;&lt; read more &gt;&gt;
+                
+        .container.is-flex.is-centered-flex.has-margin-top
+            nav.pagination.is-centered(
+                aria-label='pagination'
+            )
+                a.pagination-previous.has-text-white.font-fix(title='This is the first page') Previous
+                a.pagination-next.has-text-light.has-background-black.font-fix Next page
+                ul.pagination-list
+                    li
+                        a.pagination-link.is-current(aria-label='Page 1', aria-current='page') 1
+                    li
+                        a.pagination-link(aria-label='Goto page 2') 2
+                    li
+                        a.pagination-link(aria-label='Goto page 3') 3

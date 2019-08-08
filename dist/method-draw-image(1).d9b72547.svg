@@ -1,0 +1,29 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="263.499996" x2="55.5" y1="39.5" x1="55.5" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="79.5" x2="109.499999" y1="79.5" x1="53.5" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_9" y2="142.5" x2="107.500002" y1="142.5" x1="53.5" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_10" y2="209.5" x2="109.499999" y1="209.5" x1="53.5" stroke-width="1.5" stroke="#000" fill="none"/>
+  <ellipse ry="4.5" rx="4" id="svg_12" cy="79" cx="54.5" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#1A333F"/>
+  <ellipse ry="4.5" rx="4" id="svg_13" cy="143" cx="55.5" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#1A333F"/>
+  <ellipse ry="4.5" rx="4" id="svg_14" cy="210" cx="55.5" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#1A333F"/>
+  <text transform="matrix(0.517924, 0, 0, 0.607747, 79.3015, 24.2431)" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="23" id="svg_21" y="100.245068" x="74" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Harvey Norman: Computer Salesman</text>
+  <text transform="matrix(0.499484, 0, 0, 0.690946, 83.8994, 38.1735)" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="22" id="svg_22" y="155.444346" x="74" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Canterbury Leagues Club Waiter / Attendant</text>
+  <text transform="matrix(0.540449, 0, 0, 0.841895, 77.4343, 30.5503)" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="22" id="svg_23" y="222.469839" x="74" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Compumann Computer Technician</text>
+  <ellipse ry="8.5" rx="8.5" id="svg_25" cy="37" cx="55" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#000000"/>
+  <ellipse ry="0.5" rx="1.5" id="svg_26" cy="34" cx="56" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <path transform="rotate(90, 55.25, 262.448)" id="svg_28" d="m57.271973,262.44751l-20.021973,-24.5l36,24.5l-36,24.5l20.021973,-24.5z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#000000"/>
+  <text transform="matrix(0.794705, 0, 0, 0.857377, 1.745, 14.9923)" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="22" id="svg_29" y="83.758396" x="8.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">2013</text>
+  <text transform="matrix(0.831263, 0, 0, 0.897437, 1.7869, 15.6042)" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="22" id="svg_30" y="148.071422" x="4.632738" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">2015</text>
+  <text transform="matrix(0.845628, 0, 0, 0.763842, 4.44518, 48.3168)" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="22" id="svg_31" y="219.277078" x="3.325929" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">2017</text>
+ </g>
+</svg>
