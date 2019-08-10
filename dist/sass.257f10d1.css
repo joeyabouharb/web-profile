@@ -9611,8 +9611,8 @@ code {
 pre {
   border-radius: 1rem;
   border: solid #001236 0.1rem;
-  background-color: #140027;
-  color: black;
+  background-color: teal;
+  color: #a7c4ff;
 }
 
 .hljs-comment, .hljs-quote {
