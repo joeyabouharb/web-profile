@@ -19,10 +19,10 @@ block content
                     code
                         | const site_map = () =&gt; {
                         |   return {
-                        |     about: <a class="has-text-light" href="./about"+ext> () =&gt; about </a>,
-                        |     blog: <a class="has-text-light" href="./blog"+ext> () =&gt; blog </a>,
-                        |     projects: <a class="has-text-light" href="./projects"+ext> () =&gt; projects </a>,
-                        |     contact: <a class="has-text-light", href='./'+`about${ext}#contact`> () =&gt; contact </a>,
+                        |     about: #[a.has-text-light(href="about"+ext) () =&gt; about]
+                        |     blog: #[a.has-text-light(href="blog"+ext) () =&gt; blog]
+                        |     projects: #[a.has-text-light(href="projects"+ext) () =&gt; projects]
+                        |     contact:  #[a.has-text-light(href="about"+ext+"#contact") () =&gt; contact]
                         |   };
                         | };
                         | const roles = () =&gt; {
