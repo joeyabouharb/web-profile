@@ -10,7 +10,7 @@ html(lang="en")
             content=description
         )
         link(
-            href="https://fonts.googleapis.com/css?family=PT+Mono%7CMerriweather%7CMontserrat&display=auto"
+            href="https://fonts.googleapis.com/css?family=PT+Mono%7CMerriweather%7CMontserrat&display=swap"
             rel="stylesheet"
             type="text/css"
         )
@@ -37,7 +37,7 @@ html(lang="en")
             http-equiv="Content-Security-Policy"
             content="default-src 'self'; "+
                 "style-src 'self' https://fonts.googleapis.com; "+
-                "script-src 'self'; "+
+                "script-src 'self' https://cdnjs.cloudflare.com/; "+
                 "font-src 'self' https://fonts.gstatic.com; "+
                 "img-src 'self' https://cdn.jsdelivr.net;"
         )
@@ -46,4 +46,4 @@ html(lang="en")
             include ../includes/header
             block content
             include ../includes/footer
-        script(src="../res/js/header.js")
+        script(src="../res/js/header.js" defer)

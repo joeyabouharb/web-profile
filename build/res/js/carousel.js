@@ -1,3 +1,4 @@
+'use-strict';
 import Siema from "siema"
 (() => {
     // New siema instance

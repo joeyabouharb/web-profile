@@ -1,3 +1,4 @@
+'use-strict';
 import hljs from 'highlight.js/lib/highlight';
 import javascript from 'highlight.js/lib/languages/javascript';
 (() => {

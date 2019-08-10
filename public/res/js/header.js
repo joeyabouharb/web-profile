@@ -1,3 +1,4 @@
+'use-strict';
 (() => {
     console.log('don\'t be cheeky 🥺')
     const burger = document.querySelector('.burger');
