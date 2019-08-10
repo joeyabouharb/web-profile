@@ -1,0 +1,64 @@
+/* layout for about page
+@media screen and (min-width: 601px)
+    #powerforward, #powerback,
+    #learnforward, #learnback
+        display: none
+        visibility: hidden
+
+#powerforward, #powerback,
+#learnforward, #learnback
+    z-index: 10
+    background-color: inherit
+    border: none
+
+#powerforward, #learnforward
+    position: absolute
+    right: 0
+
+#powerback, #learnback
+    position: absolute
+    left: 0
+
+.is-lang
+    font-size: 1.1rem
+    max-width: 5rem
+    font-family: $family-serif
+    color: $light
+
+@media screen and(max-width: 671px)
+    .lang-slides
+        max-width: 100%
+        overflow-y: scroll
+        -ms-overflow-style: none
+        scrollbar-width: none
+        scroll-behavior: smooth
+        -webkit-overflow-scrolling: touch
+        &::-webkit-scrollbar
+            display: none
+
+#learnlang > figure,
+#powerlang > figure
+    background-color: $black
+    min-height: 13rem
+    min-width: 18rem
+    margin: 0.5rem
+    justify-content: flex-start
+    align-content: flex-start
+
+
+.lang-info
+    word-break: break-word
+    max-width: 10rem
+    padding-left: 1.5rem
+
+.history
+    min-width: 15rem
+
+.power-img
+    max-width: 5rem
+
+.learn-img
+    max-width: 5rem
+
+.ts-svg
+    fill: #007acc

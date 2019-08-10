@@ -4,14 +4,52 @@ block content
         include ../includes/breadcrumbs
         .has-margin-top.has-background-black.has-slight-radius
             +breadcrumbs('breadcrumbs', 'index', 'projects')
-        section.has-margin-top
-            h2.title.is-2.has-text-centered Projects
-    .hero-body.bounceIn
-        .container
-            .columns.is-centered-flex.is-centered.has-margin
-                .column.is-one-third.has-margin
-                    p.has-text-centered fdsfdfs
-                .column.is-one-third.has-margin
-                    p.has-text-centered dfsdfsdf
-                .column.is-one-third.has-margin
-                    p.has-text-centered dfsdfsdf
+        section.container
+            h2.title.is-3.has-margin-top.has-text-centered Projects
+            .siema
+                .project.section-desktop.card.has-background-black.is-flex.is-col-flexed.has-slight-radius
+                    figure.align-self
+                        img.project-demo.has-slight-radius(src='../res/img/cardgame.gif', alt='card game')
+                    .card-header.align-self
+                        h3.title.is-4.has-text-centered
+                            | Card Game: Idiot
+                    .card-body.is-flex.is-col-flexed.is-centered-flex
+                        p.has-padding-left.scale-content
+                            | Card game prototyped in Python and playable through Terminal
+
+                        a.button.is-grey(href="#") Source
+                .project.section-desktop.card.has-background-black.is-flex.is-col-flexed.has-slight-radius
+                    figure.align-self
+                        img.image.project-demo(src='../res/img/bank-app.gif' alt='Banking App')
+                    .card-header.align-self
+                        h3.title.is-4.has-text-centered
+                            | Banking App
+                    .card-body.is-flex.is-col-flexed.is-centered-flex
+                        p.has-padding-left.scale-content
+                            | Banking System with full Functionality!
+                            | Login, withdraw, check balance and deposit into your account!
+                        a.button.is-grey(href="#") Source
+                .project.section-desktop.card.has-background-black.is-flex.is-col-flexed.has-slight-radius
+                    figure.align-self
+                        img.image.project-demo(src='../res/img/mockdata.gif' alt='mock data app')
+                    .card-header.align-self
+                        h3.title.is-4.has-text-centered
+                            | Seed Data
+                    .card-body.is-flex.is-col-flexed.is-centered-flex
+                        p.has-padding-left.scale-content Python Script to help with generating and seeding a database
+                        a.button.is-grey(href="#") Source
+                .project.section-desktop.card.has-background-black.is-flex.is-col-flexed.has-slight-radius  
+                    figure.align-self
+                        img.image.project-demo(src='../res/img/quiz-gif.gif' alt='quiz')
+                    .card-header.align-self
+                        h3.title.is-4.has-text-centered
+                            | Quiz!
+                    .card-body.is-flex.is-col-flexed.is-centered-flex
+                        p.has-padding-left.scale-content 
+                            | Questionaire application in terminal written in python.
+                            | Asks 10 questions from a list of 20, randomly chosen!
+
+                        a.button.is-grey(href="#") Source
+            #button-selectors.is-flex.is-row-flexed.has-background-black.justify-evenly.has-radius.has-margin.has-padding.has-slight-radius
+
+    script(src="../res/js/carousel.js")

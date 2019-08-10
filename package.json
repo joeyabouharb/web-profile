@@ -4,7 +4,9 @@
   "description": "static assets for web profile",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel serve public/pages/index.pug",
+    "build": "rm -rf ./dist ./build && node build.js && parcel build ./build/pages/index.html cp ./public/res/profile.png ./dist/__/"
   },
   "repository": {
     "type": "git",
@@ -18,10 +20,12 @@
     "bulma": "^0.7.5",
     "express": "^4.17.1",
     "fg-loadcss": "^2.1.0",
+    "fs-extra": "^8.1.0",
     "headroom.js": "^0.9.4",
     "highlight.js": "^9.15.9",
     "pug": "^2.0.4",
-    "sass": "^1.22.9"
+    "sass": "^1.22.9",
+    "siema": "^1.5.1"
   },
   "devDependencies": {
     "parcel": "^1.12.3",

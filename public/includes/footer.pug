@@ -5,34 +5,39 @@
                 strong This site was created 
                     | by:
                 span <br/>&copy; Joey Abouharb
-            nav.is-flex.justify-evenly.foot-links
+            nav.is-flex.is-between.foot-links
 
                 a.foot-link(
-                    href="index.pug"
+                    href="./index"+ext
                 ) Home
                 a.foot-link(
-                    href="blog.pug"
+                    href="./blog"+ext
                 ) Blog
                 a.foot-link(
-                    href="about.pug"
+                    href="./about"+ext
                 ) About
                 a.foot-link(
-                    href="projects.pug"
+                    href="./projects"+ext,
+                    
                 ) Projects
-            nav.is-flex.justify-evenly.has-padding
+            nav.is-flex.is-between.has-padding
+                a(
+                    href="#",
+                    aria-label="facebook profile page"
+                )
+                    i.fab.fa-2x.fa-facebook.has-text-light
+                a(
+                    href="#",
+                    aria-label="medium blog profile page"
+                )
+                    i.fab.fa-2x.fa-medium.has-text-light
                 a(
                     href="#"
+                    aria-label="LinkedIn profile page"
                 )
-                    i.fab.fa-2x.fa-facebook
+                    i.fab.fa-2x.fa-linkedin.has-text-light
                 a(
-                    href="#"
+                    href="#",
+                    aria-label="twitter profile page"
                 )
-                    i.fab.fa-2x.fa-medium
-                a(
-                    href="#"
-                )
-                    i.fab.fa-2x.fa-linkedin
-                a(
-                    href="#"
-                )
-                    i.fab.fa-2x.fa-twitter
+                    i.fab.fa-2x.fa-twitter.has-text-light

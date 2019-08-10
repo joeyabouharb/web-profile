@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Joey :: Home</title>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Joey&amp;#39; Home Page - Welcome!">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono%7CMerriweather%7CMontserrat&amp;display=auto" rel="stylesheet" type="text/css">
+    <link href="../res/sass/index.sass" type="text/css" rel="stylesheet">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; script-src 'self'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net;">
+  </head>
+  <body class="has-background-dark">
+    <div class="hero is-fullheight is-dark">
+      <header class="hero-head is-mono-font headroom" id="header">
+        <nav class="navbar is-dark">
+          <div class="container is-fluid">
+            <div class="navbar-brand"><a class="navbar-item" href="index.html">
+                <h1 class="title is-7 is-mono-font">joey@dev</h1></a><span class="navbar-burger burger" id="collapse-menu"><span> </span><span> </span><span> </span></span></div>
+            <div class="navbar-menu" id="navMenu"> 
+              <div class="navbar-end"><a class="navbar-item" href="./about.html">About</a><a class="navbar-item" href="./blog.html">Blog</a><a class="navbar-item" href="./projects.html">Projects</a></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="has-margin has-padding">
+        <div class="section"></div>
+        <div class="has-slight-radius has-background-black shadowed has-padding">
+          <div class="section">
+            <div class="is-flex is-row-flexed is-centered-flex">
+              <div class="is-flex is-col-flexed is-flexed-to-start">
+                <h2 class="title is-3 is-serif has-text-centered">Joey: Junior App Developer</h2>
+                <h3 class="subtitle is-5 has-text-centered">
+                  Security Bootcamp Dip.<br/> @Coderacademy</h3>
+              </div>
+              <div class="has-padding has-margin">
+                <figure class="image img-size"><img class="is-rounded shadowed" src="../res/profile.png" alt="profile pic"></figure>
+              </div>
+            </div>
+            <pre class="shadowed disable-selection has-margin"><code>const site_map = () =&gt; {
+  return {
+    about: <a class="has-text-light" href="./about"+ext> () =&gt; about </a>,
+    blog: <a class="has-text-light" href="./blog"+ext> () =&gt; blog </a>,
+    projects: <a class="has-text-light" href="./projects"+ext> () =&gt; projects </a>,
+    contact: <a class="has-text-light", href='./'+`about${ext}#contact`> () =&gt; contact </a>,
+  };
+};
+const roles = () =&gt; {
+  return [
+    'Full-Stack',
+    'Server Stack and API Development',
+    'Linux / Windows',
+    'Scripting',
+    'Security and Testing',
+    'Front-End Design'
+    ];
+};</code></pre>
+          </div>
+          <div class="section"></div>
+        </div>
+      </main>
+      <script src="../res/js/highlight.js" defer></script>
+      <div class="hero-footer is-flex">
+        <footer class="footer is-paddingless has-background-black is-shadow-top is-stretched">   
+          <div class="has-text-centered">
+            <p class="has-padding"><strong>
+                This site was created by:</strong><span><br/>&copy; Joey Abouharb</span></p>
+            <nav class="is-flex is-between foot-links"><a class="foot-link" href="./index.html">Home</a><a class="foot-link" href="./blog.html">Blog</a><a class="foot-link" href="./about.html">About</a><a class="foot-link" href="./projects.html">Projects</a></nav>
+            <nav class="is-flex is-between has-padding"><a href="#" aria-label="facebook profile page"><i class="fab fa-2x fa-facebook has-text-light"></i></a><a href="#" aria-label="medium blog profile page"><i class="fab fa-2x fa-medium has-text-light"></i></a><a href="#" aria-label="LinkedIn profile page"><i class="fab fa-2x fa-linkedin has-text-light"></i></a><a href="#" aria-label="twitter profile page"><i class="fab fa-2x fa-twitter has-text-light"></i></a></nav>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="../res/js/header.js"></script>
+  </body>
+</html>

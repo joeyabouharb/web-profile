@@ -1,26 +1,28 @@
 extends ../layouts/layout
 block content
-    main.section
-        .container.is-col-flexed.center-self.is-centered-flex
-            figure.image.img-size.has-margin
-                img.center-self.is-rounded.shadowed(
-                    src="../res/img/profile.jpeg"
-                    alt="profile pic")
-        section.container
-            .has-slight-radius.has-background-black.shadowed.has-padding
-                h1.title.is-3.is-serif.has-text-centered Joey: Junior App Developer
-                .is-flex.is-centered-flex
-                h2.subtitle.is-5.has-text-centered.is-em
-                    | Security Bootcamp Dip.
-                    <br/> @Coderacademy
-                pre.shadowed.disable-selection
+    main.has-margin.has-padding
+        .section
+        .has-slight-radius.has-background-black.shadowed.has-padding
+            .section
+                .is-flex.is-row-flexed.is-centered-flex
+                    .is-flex.is-col-flexed.is-flexed-to-start
+                        h2.title.is-3.is-serif.has-text-centered Joey: Junior App Developer
+                        h3.subtitle.is-5.has-text-centered
+                            | Security Bootcamp Dip.
+                            <br/> @Coderacademy
+                    .has-padding.has-margin
+                        figure.image.img-size
+                            img.is-rounded.shadowed(
+                                src="../res/profile.png"
+                                alt="profile pic")
+                pre.shadowed.disable-selection.has-margin
                     code
-                        | const joey = () =&gt; {
+                        | const site_map = () =&gt; {
                         |   return {
-                        |     about: <a class="has-text-light" href="about.pug"> () =&gt; about </a>,
-                        |     blog: <a class="has-text-light" href="blog.pug"> () =&gt; blog </a>,
-                        |     projects: <a class="has-text-light" href="projects.pug"> () =&gt; projects </a>,
-                        |     contact: <a class="has-text-light" href="about.pug#contact"> () =&gt; contact </a>,
+                        |     about: <a class="has-text-light" href="./about"+ext> () =&gt; about </a>,
+                        |     blog: <a class="has-text-light" href="./blog"+ext> () =&gt; blog </a>,
+                        |     projects: <a class="has-text-light" href="./projects"+ext> () =&gt; projects </a>,
+                        |     contact: <a class="has-text-light", href='./'+`about${ext}#contact`> () =&gt; contact </a>,
                         |   };
                         | };
                         | const roles = () =&gt; {
@@ -33,6 +35,7 @@ block content
                         |     'Front-End Design'
                         |     ];
                         |};
+            .section
     script(
-      src="../res/js/highlight.js" defer
+        src="../res/js/highlight.js" defer
     )

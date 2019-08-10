@@ -3,5 +3,5 @@ mixin breadcrumbs(id, ...crumbs)
         ul(id=id)
             each item in crumbs
                 li.crumbs
-                    a.crumb-link(href="../pages/"+item+'.pug')=item
+                    a.crumb-link(href='./'+item+ext)=item
 

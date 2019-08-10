@@ -1,8 +1,8 @@
-header#header.hero-head.is-mono-font.headroom.shadowed
+header#header.hero-head.is-mono-font.headroom
     nav.navbar.is-dark
         .container.is-fluid
             .navbar-brand
-                a.navbar-item(href="index.pug")
+                a.navbar-item(href="index"+ext)
                     h1.title.is-7.is-mono-font joey@dev
                 span#collapse-menu.navbar-burger.burger
                     span 
@@ -11,13 +11,13 @@ header#header.hero-head.is-mono-font.headroom.shadowed
             #navMenu.navbar-menu 
                 .navbar-end
                     a.navbar-item(
-                        href="about.pug"
+                        href="./about"+ext
                     ) About
                     a.navbar-item(
-                        href="blog.pug"
+                        href="./blog"+ext
                     ) Blog
                     a.navbar-item(
-                        href="projects.pug"
+                        href="./projects"+ext
                     ) Projects
 
     

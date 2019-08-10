@@ -1,8 +1,5 @@
 doctype html
 html(lang="en")
-    if !title || !description
-        - var title = 'test'
-        - var description = 'test'
     head
         title #{title}
         meta(
@@ -13,7 +10,7 @@ html(lang="en")
             content=description
         )
         link(
-            href="https://fonts.googleapis.com/css?family=PT+Mono%7CMerriweather%7CMontserrat&display=swap"
+            href="https://fonts.googleapis.com/css?family=PT+Mono%7CMerriweather%7CMontserrat&display=auto"
             rel="stylesheet"
             type="text/css"
         )
@@ -23,13 +20,24 @@ html(lang="en")
                 type="text/css"
                 rel="stylesheet"
         )
+        link(
+            rel="manifest" href="../manifest.webmanifest"
+        )
         meta(
             name="viewport"
             content="width=device-width, initial-scale=1"
         )
-        body.has-background-dark
-            .hero.is-fullheight.is-dark
-                    include ../includes/header
-                    block content
-                    include ../includes/footer
-            script(src="../res/js/header.js" defer)
+        meta(
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; "+
+                "style-src 'self' https://fonts.googleapis.com; "+
+                "script-src 'self'; "+
+                "font-src 'self' https://fonts.gstatic.com; "+
+                "img-src 'self' https://cdn.jsdelivr.net;"
+        )
+    body.has-background-dark
+        .hero.is-fullheight.is-dark
+            include ../includes/header
+            block content
+            include ../includes/footer
+        script(src="../res/js/header.js")

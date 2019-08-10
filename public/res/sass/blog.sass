@@ -1,0 +1,33 @@
+
+/* article display helpers*/
+.is-flex > .section-desktop
+    max-width: 38rem
+
+.section-desktop
+    @media screen and (min-width: 862px)
+        padding: 1rem .5rem
+    @media screen and (max-width: 861px)
+        padding: 0.5rem .1rem 1rem .1rem
+
+.section-desktop > article
+    min-height: 40rem
+
+
+/* custom paginations
+.pagination-link
+    background-color: $black
+    border-color: $light
+    color: $light
+    &:hover
+        background-color: $light
+        border-color: $black
+        color: $dark
+.pagination-link.is-current
+    background-color: $dark
+    &:hover
+        color: $white
+
+.pagination-next
+    border-color: $light
+    &:hover
+        background-color: $black
