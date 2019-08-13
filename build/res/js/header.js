@@ -1,5 +1,17 @@
 'use-strict';
 (() => {
+    const Headroom = require('headroom.js')
+    const header = document.getElementById('header');
+    const headroom = new Headroom(header, {
+        offset: 105,
+        tolerance: 5,
+        classes: {
+        initial: "animated",
+        pinned: "slideInDown",
+        unpinned: "slideOutUp"
+        }
+    });
+    headroom.init();
     console.log('don\'t be cheeky 🥺')
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('#navMenu');
@@ -17,7 +29,6 @@
             nav.classList.toggle('is-active');
             nav.classList.toggle("bounceIn")
         }
-
     });
     })();
 

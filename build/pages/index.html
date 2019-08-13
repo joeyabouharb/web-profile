@@ -9,6 +9,7 @@
     <link rel="manifest" href="../res/manifest.webmanifest">
     <link rel="icon" href="../res/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../res/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../res/profile.png" sizes="256x256">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; script-src 'self' https://cdnjs.cloudflare.com/; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.jsdelivr.net;">
   </head>
@@ -39,12 +40,12 @@
                 <figure class="image img-size"><img class="is-rounded shadowed" src="../res/img/profile.jpeg" alt="profile pic"></figure>
               </div>
             </div>
-            <pre class="shadowed disable-selection has-margin"><code>const site_map = () =&gt; {
+            <pre class="shadowed disable-selection has-margin"><code class="hljs">const site_map = () =&gt; {
   return {
-    about: <a class="has-text-light" href="about.html">() =&gt; about</a>
-    blog: <a class="has-text-light" href="blog.html">() =&gt; blog</a>
-    projects: <a class="has-text-light" href="projects.html">() =&gt; projects</a>
-    contact:  <a class="has-text-light" href="about.html#contact">() =&gt; contact</a>
+    <span>about:</span> <a class="has-text-light" href="about.html">() =&gt; about,</a>
+    <span>blog:</span> <a class="has-text-light" href="blog.html">() =&gt; blog,</a>
+    <span>projects:</span> <a class="has-text-light" href="projects.html">() =&gt; projects,</a>
+    <span>contact:</span>  <a class="has-text-light" href="about.html#contact">() =&gt; contact,</a>
   };
 };
 const roles = () =&gt; {
@@ -54,7 +55,7 @@ const roles = () =&gt; {
     'Linux / Windows',
     'Scripting',
     'Security and Testing',
-    'Front-End Design'
+    'Front-End Design',
     ];
 };</code></pre>
           </div>

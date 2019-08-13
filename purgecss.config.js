@@ -1,4 +1,6 @@
 module.exports = {
     content: ["**/*.html"],
-    css: ["**/*.css"]
+    css: ["**/*.sass"],
+    whitelist: ["animated", "slideInDown", "slideOutUp"],
+     whitelistPatterns: [/^hljs.*/]
   }
