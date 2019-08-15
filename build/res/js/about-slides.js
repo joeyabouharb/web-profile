@@ -12,11 +12,11 @@
         }
     
         forward.onclick = () => {
-            sideScroll(slide, 'right', 30, 80, 10)
+            sideScroll(slide, 'right', 50, 100, 10)
         }
         const sideScroll = (element, direction, speed, distance, step) => {
             let scrollAmount = 0;
-            const slideTimer = setInterval(function(){
+            const slideTimer = setInterval(() => {
                 if(direction == 'left'){
                     element.scrollLeft -= step;
                 } else {
