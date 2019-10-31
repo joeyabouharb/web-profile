@@ -36,7 +36,6 @@
   "devDependencies": {
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-compress": "^1.0.10",
     "parcel-plugin-purgecss": "^2.1.2"
   }
 }
