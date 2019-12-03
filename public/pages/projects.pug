@@ -4,18 +4,18 @@ block content
         include ../includes/breadcrumbs
         .has-margin-top.has-background-black.has-slight-radius
             +breadcrumbs('breadcrumbs', 'index', 'projects')
-        section
+        section.container
             h2.title.is-3.has-margin-top.has-text-centered Projects
-            .siema
+            #button-selectors.is-flex.is-row-flexed.has-background-black.justify-evenly.has-radius.has-padding.has-slight-radius
+            .siema.widthy
                 .project.card.has-background-black.is-flex.is-col-flexed.has-slight-radius.is-between
                     figure.align-self
-                        img#demo0.project-demo.has-slight-radius(src='../res/img/card-game.webp' alt='card game')
+                        img#demo0.has-slight-radius.project-demo(src='../res/img/card-game.webp' alt='card game')
                         h3.title.is-4.has-text-centered
                             | Card Game: Idiot
                     .card-body.is-flex.is-col-flexed.is-centered-flex
-                        p.has-padding-left.scale-content
+                        p.scale-content
                             | Card game prototyped in Python and playable through Terminal
-
                         a.button.is-grey(href="#") Source
                 .project.card.has-background-black.is-flex.is-col-flexed.has-slight-radius.is-between
                     figure.align-self
@@ -46,6 +46,5 @@ block content
                             | Asks 10 questions from a list of 20, randomly chosen!
 
                         a.button.is-grey(href="#") Source
-            #button-selectors.is-flex.is-row-flexed.has-background-black.justify-evenly.has-radius.has-padding.has-slight-radius
 
-    script(src="../res/js/carousel.js" defer)
+    script(src="../res/js/carousel.js")
