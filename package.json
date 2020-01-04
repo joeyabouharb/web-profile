@@ -23,7 +23,7 @@
     "express-static-gzip": "^2.0.3",
     "fg-loadcss": "^2.1.0",
     "fs-extra": "^8.1.0",
-    "headroom.js": "^0.9.4",
+    "headroom.js": "^0.10.3",
     "helmet": "^3.21.2",
     "highlight.js": "^9.15.9",
     "install": "^0.13.0",
