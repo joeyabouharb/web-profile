@@ -27,7 +27,7 @@
     "fs-extra": "^8.1.0",
     "headroom.js": "^0.9.4",
     "helmet": "^3.23.1",
-    "highlight.js": "^9.18.1",
+    "highlight.js": "^10.1.1",
     "install": "^0.13.0",
     "parcel-plugin-subresource-integrity": "^0.3.4",
     "pug": "^2.0.4",
