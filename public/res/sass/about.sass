@@ -22,7 +22,6 @@
 .is-lang
     font-size: 1.1rem
     max-width: 5rem
-    font-family: $family-serif
     color: $light
 
 @media screen and(max-width: 768px)
@@ -45,7 +44,7 @@
     justify-content: flex-start
     align-content: flex-start
 #powerlang, #learnlang
-    @media screen and(max-width: 832px)
+    @media screen and(max-width: 932px)
         justify-content: center
     @media screen and(max-width: 768px)
         justify-content: start
@@ -67,3 +66,99 @@
 
 .ts-svg
     fill: #007acc
+
+
+/* Variables */
+
+$background: #47806d
+
+$color-primary: #572e51
+$color-light: white
+$color-dim: #6c6d6d
+$spacing: 50px
+$radius: 4px
+
+$date: 120px
+$dotborder: 4px
+$dot: 11px
+$line: 4px
+
+
+/* Base */
+
+.event
+  p
+    font-weight: 300
+
+strong
+  font-weight: 600
+
+#timeline-content
+  margin-top: $spacing
+  text-align: center  
+
+
+/* Timeline */
+
+.timeline
+  border-left: $line solid $color-primary
+  border-bottom-right-radius: $radius
+  border-top-right-radius: $radius    
+  background: fade($color-light, 3%)
+  color: fade(white, 80%)
+  margin: $spacing auto  
+  letter-spacing: 0.5px   
+  position: relative
+  line-height: 1.4em
+  font-size: 1.03rem   
+  padding: $spacing   
+  list-style: none
+  text-align: left  
+  font-weight: 100  
+  max-width: 60% 
+  
+  .timeline_item
+   letter-spacing: 1.5px
+   font-weight: 100
+   font-size: 1.4em    
+  
+  
+  .event
+    border-bottom: 1px dashed fade($color-light, 10%)
+    padding-bottom: ($spacing * 0.5)
+    margin-bottom: $spacing  
+    position: relative
+
+    &:last-of-type 
+      padding-bottom: 0
+      margin-bottom: 0 
+      border: none      
+    
+
+    &:before, &:after
+      position: absolute
+      display: block
+      top: 0
+    
+
+    &:before
+      left: ((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1    
+      color: fade($color-light, 40%)    
+      content: attr(data-date)
+      text-align: right
+      font-weight: 100    
+      font-size: 0.9em
+      min-width: $date
+    
+
+    &:after
+      box-shadow: 0 0 0 $dotborder fade($color-primary,100%)    
+      left: ($spacing + $line + ($dot * 0.35)) * -1        
+      background: lighten($background,5%)    
+      border-radius: 50%  
+      height: $dot
+      width: $dot
+      content: ""
+      top: 5px
+  
+  

@@ -8,11 +8,11 @@
     const learnslide = document.getElementById('learnlang');
     const slideCreate = (back, forward, slide) => {
         back.onclick = () => {
-            sideScroll(slide, 'left', 30, 80, 10)
+            sideScroll(slide, 'left', 100, 180, 50)
         }
     
         forward.onclick = () => {
-            sideScroll(slide, 'right', 50, 100, 10)
+            sideScroll(slide, 'right', 100, 180, 50)
         }
         const sideScroll = (element, direction, speed, distance, step) => {
             let scrollAmount = 0;

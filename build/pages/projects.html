@@ -19,7 +19,7 @@
         <nav class="navbar is-dark">
           <div class="container is-fluid">
             <div class="navbar-brand"><a class="navbar-item" href="index.html">
-                <h1 class="title is-7 is-mono-font">joey@dev</h1></a><span class="navbar-burger burger" id="collapse-menu"><span> </span><span> </span><span> </span></span></div>
+                <h1 class="title is-5 is-mono-font has-text-white">joey@dev</h1></a><span class="navbar-burger burger has-text-4" id="collapse-menu"><span> </span><span> </span><span> </span></span></div>
             <div class="navbar-menu" id="navMenu"> 
               <div class="navbar-end"><a class="navbar-item" href="./about.html">About</a><a class="navbar-item" href="./blog.html">Blog</a><a class="navbar-item" href="./projects.html">Projects</a></div>
             </div>
@@ -28,66 +28,71 @@
       </header>
       <main class="section">
         <div class="has-margin-top has-background-black has-slight-radius">
-                  <nav class="breadcrumb has-padding" aria-label="breadcrumbs">
+                  <nav class="breadcrumb shadowed has-slight-radius has-padding" aria-label="breadcrumbs">
                     <ul id="breadcrumbs">
                       <li class="crumbs"><a class="crumb-link" href="./index.html">index</a></li>
                       <li class="crumbs"><a class="crumb-link" href="./projects.html">projects</a></li>
                     </ul>
                   </nav>
         </div>
-        <section>
-          <h2 class="title is-3 has-margin-top has-text-centered">Projects</h2>
-          <div class="siema">
-            <div class="project card has-background-black is-flex is-col-flexed has-slight-radius is-between">
-              <figure class="align-self"><img class="project-demo has-slight-radius" id="demo0" src="../res/img/card-game.webp" alt="card game">
+        <section class="has-margin-bottom container is-fluid">
+          <h2 class="title override-title-color is-3 has-margin-top has-text-centered">Projects</h2>
+          <div class="is-flex is-row-flexed justify-evenly has-radius has-slight-radius has-margin-bottom" id="button-selectors"></div>
+          <div class="is-flex is-row-flexed" id="button-selector"></div>
+          <div class="siema has-background-black has-radius has-slight-radius shadowed">
+            <div class="project card is-flex is-row-flexed has-slight-radius is-between has-margin-top">
+              <figure class="has-padding"><img class="has-slight-radius image project-demo" id="demo0" src="../res/img/card-game.webp" alt="card game">
                 <h3 class="title is-4 has-text-centered">Card Game: Idiot</h3>
               </figure>
-              <div class="card-body is-flex is-col-flexed is-centered-flex">
-                <p class="has-padding-left scale-content">Card game prototyped in Python and playable through Terminal</p><a class="button is-grey" href="#">Source</a>
+              <div class="card-body">
+                <p class="has-padding-left has-padding-right scale-content">Card game prototyped in Python and playable through Terminal</p>
+                <div class="is-flex is-centered-flex"><a class="button is-grey alig" href="#">Source</a></div>
               </div>
             </div>
-            <div class="project card has-background-black is-flex is-col-flexed has-slight-radius is-between">
-              <figure class="align-self"><img class="image project-demo" id="demo1" src="../res/img/bank-app.webp" alt="Banking App">
+            <div class="project card has-background-black is-flex is-row-flexed has-slight-radius is-between has-margin-top">
+              <figure class="has-padding"><img class="has-slight-radius image project-demo" id="demo1" src="../res/img/bank-app.webp" alt="Banking App">
                 <h3 class="title is-4 has-text-centered">Banking App</h3>
               </figure>
-              <div class="card-body is-flex is-col-flexed is-centered-flex">
-                <p class="has-padding-left scale-content">
+              <div class="card-body">
+                <p class="has-padding-left has-padding-right scale-content">
                   Banking System with full Functionality!
                   Login, withdraw, check balance and deposit into your account!
-                </p><a class="button is-grey" href="#">Source</a>
+                </p>
+                <div class="is-flex is-centered-flex"><a class="button is-grey" href="#">Source</a></div>
               </div>
             </div>
-            <div class="project card has-background-black is-flex is-col-flexed has-slight-radius is-between">
-              <figure class="align-self"><img class="image project-demo" id="demo2" src="../res/img/mock-data.webp" alt="mock data app">
+            <div class="project card has-background-black is-flex is-row-flexed has-slight-radius is-between has-margin-top">
+              <figure class="has-padding"><img class="has-slight-radius image project-demo" id="demo2" src="../res/img/mock-data.webp" alt="mock data app">
                 <h3 class="title is-4 has-text-centered">Seed Data</h3>
               </figure>
-              <div class="card-body is-flex is-col-flexed is-centered-flex">
-                <p class="has-padding-left scale-content">Python Script to help with generating and seeding a database</p><a class="button is-grey" href="#">Source</a>
+              <div class="card-body">
+                <p class="has-padding-left has-padding-right scale-content">Python Script to help with generating and seeding a database</p>
+                <div class="is-flex is-centered-flex"><a class="button is-grey" href="#">Source</a></div>
               </div>
             </div>
-            <div class="project card has-background-black is-flex is-col-flexed has-slight-radius is-between">
-              <figure class="align-self"><img class="image project-demo" id="demo3" src="../res/img/quiz-proj.webp" alt="quiz">
+            <div class="project card has-background-black is-flex is-row-flexed has-slight-radius is-between has-margin-top">
+              <figure class="has-padding"><img class="has-slight-radius image project-demo" id="demo3" src="../res/img/quiz-proj.webp" alt="quiz">
                 <h3 class="title is-4 has-text-centered">Quiz!</h3>
               </figure>
-              <div class="card-body is-flex is-col-flexed is-centered-flex">
-                <p class="has-padding-left scale-content">
+              <div class="card-body">
+                <p class="has-padding-left has-padding-right scale-content">
                    Questionaire application in terminal written in python.
                   Asks 10 questions from a list of 20, randomly chosen!
-                </p><a class="button is-grey" href="#">Source</a>
+                </p>
+                <div class="is-flex is-centered-flex"><a class="button is-grey" href="#">Source</a></div>
               </div>
             </div>
           </div>
-          <div class="is-flex is-row-flexed has-background-black justify-evenly has-radius has-padding has-slight-radius" id="button-selectors"></div>
         </section>
       </main>
-      <script src="../res/js/carousel.js" defer></script>
-      <div class="hero-footer is-flex">
-        <footer class="footer is-paddingless has-background-black is-shadow-top is-stretched">   
+      <script src="../res/js/carousel.js"></script>
+      <div class="section is-flex has-slight-radius shadowed has-background-black has-margin">
+        <footer class="footer is-paddingless is-stretched has-background-black container">
           <div class="has-text-centered">
             <p class="has-padding"><strong>
                 This site was created by:</strong><span><br/>&copy; Joey Abouharb</span></p>
-            <nav class="is-flex is-between foot-links"><a class="foot-link" href="./index.html">Home</a><a class="foot-link" href="./blog.html">Blog</a><a class="foot-link" href="./about.html">About</a><a class="foot-link" href="./projects.html">Projects</a></nav>
-            <nav class="is-flex is-between has-padding"><a href="https://www.facebook.com/joseph.abouharb.1" aria-label="facebook profile page"><i class="fab fa-2x fa-facebook has-text-light"></i></a><a href="https://medium.com/@joey.abouharb" aria-label="medium blog profile page"><i class="fab fa-2x fa-medium has-text-light"></i></a><a href="https://www.linkedin.com/in/joseph-abouharb-2043a4176/" aria-label="LinkedIn profile page"><i class="fab fa-2x fa-linkedin has-text-light"></i></a><a href="https://twitter.com/AbouharbJoey" aria-label="twitter profile page"><i class="fab fa-2x fa-twitter has-text-light"></i></a><a href="https://github.com/joeyabouharb" aria-label="github"><i class="fab fa-2x fa-github has-text-light"></i></a></nav>
+            <nav class="is-flex is-between foot-links"><a class="link foot-link" href="./index.html">Home</a><a class="link foot-link" href="./blog.html">Blog</a><a class="link foot-link" href="./about.html">About</a><a class="link foot-link" href="./projects.html">Projects</a></nav>
+            <nav class="is-flex is-between has-padding"><a class="link has-text-light" href="https://www.facebook.com/joseph.abouharb.1" aria-label="facebook profile page"><i class="fab fa-2x fa-facebook"></i></a><a class="link has-text-light" href="https://medium.com/@joey.abouharb" aria-label="medium blog profile page"><i class="fab fa-2x fa-medium"></i></a><a class="link has-text-light" href="https://www.linkedin.com/in/joseph-abouharb-2043a4176/" aria-label="LinkedIn profile page"><i class="fab fa-2x fa-linkedin"></i></a><a class="link has-text-light" href="https://twitter.com/AbouharbJoey" aria-label="twitter profile page"><i class="fab fa-2x fa-twitter"></i></a><a class="link has-text-light" href="https://github.com/joeyabouharb" aria-label="github"><i class="fab fa-2x fa-github"></i></a></nav>
           </div>
         </footer>
       </div>

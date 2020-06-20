@@ -128,11 +128,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   var slideCreate = function slideCreate(back, forward, slide) {
     back.onclick = function () {
-      sideScroll(slide, 'left', 30, 80, 10);
+      sideScroll(slide, 'left', 100, 180, 50);
     };
 
     forward.onclick = function () {
-      sideScroll(slide, 'right', 50, 100, 10);
+      sideScroll(slide, 'right', 100, 180, 50);
     };
 
     var sideScroll = function sideScroll(element, direction, speed, distance, step) {
@@ -184,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45861" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49781" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

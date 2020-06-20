@@ -4,47 +4,51 @@ block content
         include ../includes/breadcrumbs
         .has-margin-top.has-background-black.has-slight-radius
             +breadcrumbs('breadcrumbs', 'index', 'projects')
-        section.container
-            h2.title.is-3.has-margin-top.has-text-centered Projects
-            #button-selectors.is-flex.is-row-flexed.has-background-black.justify-evenly.has-radius.has-padding.has-slight-radius
-            .siema.widthy
-                .project.card.has-background-black.is-flex.is-col-flexed.has-slight-radius.is-between
-                    figure.align-self
-                        img#demo0.has-slight-radius.project-demo(src='../res/img/card-game.webp' alt='card game')
+        section.has-margin-bottom.container.is-fluid
+            h2.title.override-title-color.is-3.has-margin-top.has-text-centered Projects
+            #button-selectors.is-flex.is-row-flexed.justify-evenly.has-radius.has-slight-radius.has-margin-bottom
+            #button-selector.is-flex.is-row-flexed
+            .siema.has-background-black.has-radius.has-slight-radius.shadowed
+                .project.card.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin-top
+                    figure.has-padding
+                        img#demo0.has-slight-radius.image.project-demo(src='../res/img/card-game.webp' alt='card game')
                         h3.title.is-4.has-text-centered
                             | Card Game: Idiot
-                    .card-body.is-flex.is-col-flexed.is-centered-flex
-                        p.scale-content
+                    .card-body
+                        p.has-padding-left.has-padding-right.scale-content
                             | Card game prototyped in Python and playable through Terminal
-                        a.button.is-grey(href="#") Source
-                .project.card.has-background-black.is-flex.is-col-flexed.has-slight-radius.is-between
-                    figure.align-self
-                        img#demo1.image.project-demo(src='../res/img/bank-app.webp' alt='Banking App')
+                        div.is-flex.is-centered-flex
+                            a.button.is-primary.has-text-dark(href="#") Source
+                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin-top
+                    figure.has-padding
+                        img#demo1.has-slight-radius.image.project-demo(src='../res/img/bank-app.webp' alt='Banking App')
                         h3.title.is-4.has-text-centered
                             | Banking App
-                    .card-body.is-flex.is-col-flexed.is-centered-flex
-                        p.has-padding-left.scale-content
+                    .card-body
+                        p.has-padding-left.has-padding-right.scale-content
                             | Banking System with full Functionality!
                             | Login, withdraw, check balance and deposit into your account!
-                        a.button.is-grey(href="#") Source
-                .project.card.has-background-black.is-flex.is-col-flexed.has-slight-radius.is-between
-                    figure.align-self
-                        img#demo2.image.project-demo(src='../res/img/mock-data.webp' alt='mock data app')
+                        .is-flex.is-centered-flex
+                            a.button.is-primary.has-text-dark(href="#") Source
+                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin-top
+                    figure.has-padding
+                        img#demo2.has-slight-radius.image.project-demo(src='../res/img/mock-data.webp' alt='mock data app')
                         h3.title.is-4.has-text-centered
                             | Seed Data
-                    .card-body.is-flex.is-col-flexed.is-centered-flex
-                        p.has-padding-left.scale-content Python Script to help with generating and seeding a database
-                        a.button.is-grey(href="#") Source
-                .project.card.has-background-black.is-flex.is-col-flexed.has-slight-radius.is-between
-                    figure.align-self
-                        img#demo3.image.project-demo(src='../res/img/quiz-proj.webp' alt='quiz')
+                    .card-body
+                        p.has-padding-left.has-padding-right.scale-content Python Script to help with generating and seeding a database
+                        div.is-flex.is-centered-flex
+                            a.button.is-primary.has-text-dark(href="#") Source
+                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin-top
+                    figure.has-padding
+                        img#demo3.has-slight-radius.image.project-demo(src='../res/img/quiz-proj.webp' alt='quiz')
                         h3.title.is-4.has-text-centered
                             | Quiz!
-                    .card-body.is-flex.is-col-flexed.is-centered-flex
-                        p.has-padding-left.scale-content 
+                    .card-body
+                        p.has-padding-left.has-padding-right.scale-content 
                             | Questionaire application in terminal written in python.
                             | Asks 10 questions from a list of 20, randomly chosen!
-
-                        a.button.is-grey(href="#") Source
+                        div.is-flex.is-centered-flex
+                            a.button.is-primary.has-text-dark(href="#") Source
 
     script(src="../res/js/carousel.js")

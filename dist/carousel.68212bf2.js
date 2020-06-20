@@ -131,30 +131,68 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (function () {
   // New siema instance
   var imgArr = ['/ezgif-2-aade6c3074bf.webp', '/bank-app.webp', '/mock-data.webp', '/quiz-proj.webp'];
-  var mySiema = new _siema.default({});
+  var auto = {
+    mySiema: null,
+    value: 0,
+    start: function start() {
+      var _this = this;
+
+      this.value = setInterval(function () {
+        return _this.mySiema.next();
+      }, 7000);
+    },
+    stop: function stop() {
+      clearInterval(this.value);
+    }
+  };
+  var mySiema = new _siema.default({
+    loop: true,
+    onChange: function onChange() {
+      auto.stop();
+      auto.start();
+    }
+  });
 
   _siema.default.prototype.addPagination = function () {
-    var _this = this;
+    var _this2 = this;
 
-    var selectors = document.getElementById('button-selectors');
+    this.navigationButtons = document.getElementById('button-selectors');
+    this.prevArrow = document.createElement('button');
+    this.nextArrow = document.createElement('button');
+    this.prevArrow.innerHTML = '<i class="fas fa-backward"></i>';
+    this.nextArrow.innerHTML = '<i class="fas fa-forward"></i>';
+    this.prevArrow.classList.add('button', 'is-dark', 'has-text-black', 'has-slight-radius', 'shadowed', 'align-self');
+    this.navigationButtons.appendChild(this.prevArrow);
 
     var _loop = function _loop(i) {
       var btn = document.createElement('button');
       btn.textContent = i + 1;
-      btn.classList.add('button', 'is-light', 'has-slight-radius', 'button-even');
+      btn.classList.add('button', 'is-primary', 'has-text-dark', 'has-slight-radius', 'button-even', 'shadowed');
       btn.addEventListener('click', function () {
-        return _this.goTo(i);
+        _this2.goTo(i);
       });
-      selectors.appendChild(btn);
+
+      _this2.navigationButtons.appendChild(btn);
     };
 
     for (var i = 0; i < this.innerElements.length; i++) {
       _loop(i);
     }
+
+    this.nextArrow.classList.add('button', 'is-dark', 'has-text-black', 'has-slight-radius', 'shadowed', 'align-self');
+    this.navigationButtons.appendChild(this.nextArrow);
+    this.prevArrow.addEventListener('click', function () {
+      _this2.prev();
+    });
+    this.nextArrow.addEventListener('click', function () {
+      _this2.next();
+    });
   }; // Trigger pagination creator
 
 
-  mySiema.addPagination();
+  auto.mySiema = mySiema;
+  auto.start();
+  mySiema.addPagination(); // mySiema.addArrows();
 })();
 },{"siema":"../../node_modules/siema/dist/siema.min.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -184,7 +222,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45861" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49781" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

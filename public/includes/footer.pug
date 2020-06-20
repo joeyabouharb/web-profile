@@ -1,48 +1,48 @@
-.hero-footer.is-flex
-    footer.footer.is-paddingless.has-background-black.is-shadow-top.is-stretched    
+.section.is-flex.has-slight-radius.shadowed.has-background-black.has-margin
+    footer.footer.is-paddingless.is-stretched.has-background-black.container
         .has-text-centered
             p.has-padding
                 strong This site was created 
                     | by:
-                span <br/>&copy; Joey Abouharb
+                <br/>&copy; Joey Abouharb
             nav.is-flex.is-between.foot-links
 
-                a.foot-link(
+                a.link.foot-link(
                     href="./index"+ext
                 ) Home
-                a.foot-link(
+                a.link.foot-link(
                     href="./blog"+ext
                 ) Blog
-                a.foot-link(
+                a.link.foot-link(
                     href="./about"+ext
                 ) About
-                a.foot-link(
+                a.link.foot-link(
                     href="./projects"+ext,
                     
                 ) Projects
             nav.is-flex.is-between.has-padding
-                a(
+                a.link(
                     href="https://www.facebook.com/joseph.abouharb.1",
                     aria-label="facebook profile page"
                 )
-                    i.fab.fa-2x.fa-facebook.has-text-light
-                a(
+                    i.fab.fa-2x.fa-facebook
+                a.link(
                     href="https://medium.com/@joey.abouharb",
                     aria-label="medium blog profile page"
                 )
-                    i.fab.fa-2x.fa-medium.has-text-light
-                a(
+                    i.fab.fa-2x.fa-medium
+                a.link(
                     href="https://www.linkedin.com/in/joseph-abouharb-2043a4176/"
                     aria-label="LinkedIn profile page"
                 )
-                    i.fab.fa-2x.fa-linkedin.has-text-light
-                a(
+                    i.fab.fa-2x.fa-linkedin
+                a.link(
                     href="https://twitter.com/AbouharbJoey",
                     aria-label="twitter profile page"
                 )
-                    i.fab.fa-2x.fa-twitter.has-text-light
-                a(
+                    i.fab.fa-2x.fa-twitter
+                a.link(
                     href="https://github.com/joeyabouharb",
                     aria-label="github"
                 )
-                    i.fab.fa-2x.fa-github.has-text-light
+                    i.fab.fa-2x.fa-github

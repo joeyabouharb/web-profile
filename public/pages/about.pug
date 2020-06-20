@@ -7,10 +7,10 @@ block content
         section.has-margin-top
             .columns.is-paddingless.is-marginless
                 .column.has-radius.disable-selection.is-paddingless.is-marginless
-                    h2.title.is-1.has-padding-left About
+                    h2.title.override-title-color.is-1.has-padding-left About
                     #superpower
-                        h3.title.is-4.has-padding-left
-                            | Coding Proficencies
+                        h3.title.override-title-color.is-4.has-padding-left
+                            | Coding Proficiencies
                         #power-section.is-flex.is-row-flexed.has-no-wrap-mobile
                             button#powerback.button.align-self(type="button" aria-label="backward") 
                                 i.fas.fa-backward.has-text-light
@@ -48,7 +48,7 @@ block content
                                         | including Node servers as well as Angular and React SPAs.
                                 figure.is-flex.is-row-flexed.has-padding.has-slight-radius.shadowed
                                     .is-flex.is-col-flexed.flexed-to-start
-                                        img.image.has-background-white.has-slight-radius.power-img(
+                                        img.image.power-img(
                                             src="https://cdn.jsdelivr.net/gh/gilbarbara/logos@2.0/logos/dotnet.svg"
                                             alt="dotnet logo"
 
@@ -70,7 +70,7 @@ block content
                             button#powerforward.button.align-self(type="button" aria-label="forward") 
                                 i.fas.fa-forward.has-text-light
                     #learn
-                        h3.title.is-4.has-padding-left.has-margin-top Would love to learn!
+                        h3.title.override-title-color.is-4.has-padding-left.has-margin-top Would love to learn!
                         #learn-section.is-flex.is-row-flexed.has-no-wrap-mobile
                             button#learnback.button.align-self(type="button" aria-label="backward") 
                                 i.fas.fa-backward.has-text-light
@@ -109,28 +109,37 @@ block content
                             button#learnforward.button.align-self(type="button" aria-label="forward") 
                                 i.fas.fa-forward.has-text-light
                     #history
-                        h3.title.is-4.has-padding-left.has-margin-top History
-                        .section
-                            .columns.has-background-black.shadowed.has-slight-radius.has-padding
-                                .column
-                                    h4.title.is-5 Education
-                                    figure.is-flex.is-centered-flex
-                                        img.image.is-fluid.history(
-                                            
-                                            src="../res/img/method-draw-image(6).svg"
-                                            alt="Education History"
-                                            )
-                                .column
-                                    h4.title.is-5 Work
-                                    figure.is-flex.is-centered-flex
-                                        img.image.is-fluid.history(
-                                            src="../res/img/method-draw-image(2).svg"
-                                            alt="Education History")
-                            .is-flex.is-centered-flex.has-margin-top
-                                a.button.is-light(href="../res/Joseph_Abouharb_CV.pdf"  target="_blank") Resume
+                        h3.title.override-title-color.is-4.has-padding-left.has-margin-top History
+                        #timeline-content.container.is-fluid.has-background-black.shadowed.has-slight-radius.has-padding
+                            h4.title.timeline_title.is-4 Previous Employment and Education
+                            ul.timeline
+                                li.event(data-date='2011')
+                                    h5.timeline_item Harvey Norman
+                                    p Computer Salesman
+                                li.event(data-date='2013')
+                                    h5.timeline_item Cantebury Leagues Club
+                                    p Waiter and Chef Attendant
+                                li.event(data-date='2016')
+                                    h5.timeline_item Compumenn
+                                    p
+                                    p Lenovo Laptop Technician / Fuji Xerox Technician
+                                li.event(data-date='2018')
+                                    h5.timeline_item TAFE Petersham
+                                    p Diploma of Software Development
+                                    p
+                                li.event(data-date='2019')
+                                    h5.timeline_item Coder Academy
+                                    p Diploma of Cybersecurity
+                                    p
+                                li.event(data-date='2020')
+                                    h5.timeline_item Pen CS
+                                    p Junior Full Stack Developer .NET / C#
+                                    p
+                        .is-flex.is-centered-flex.has-margin-top
+                            button.button.is-large.is-black.has-text-light.shadowed(href="../res/Joseph_Abouharb_CV.pdf"  target="_blank") Resume
                     #contact
                         .section
-                            h3.title.is-4.has-text-centered.has-padding Links
+                            h3.title.override-title-color.is-4.has-text-centered.has-padding Links
                             figure.is-flex.is-row-flexed.is-between.has-slight-radius.shadowed.has-background-black
                                 a.has-text-light(href="https://www.facebook.com/joseph.abouharb.1" aria-label="facebook profile page")
                                     i.fab.fa-facebook.fa-4x
@@ -144,10 +153,9 @@ block content
                                     i.fab.fa-github.fa-4x
                 aside.column.is-one-fifth.has-margin-top
                     .is-sticky
-                        h2.has-text-centered Quick navigation
                         nav.menu.has-background-black.shadowed.has-slight-radius
-                            p.menu-label.has-text-white.has-text-centered
-                                | About
+                            p.menu-label.has-text-light.has-text-centered
+                                | Quick navigation
                             ul.menu-list
                                 li
                                     a.has-text-light(

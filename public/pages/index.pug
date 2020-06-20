@@ -1,41 +1,41 @@
 extends ../layouts/layout
 block content
-    main.has-margin.has-padding
+    main.section
         .section
-        .has-slight-radius.has-background-black.shadowed
-            .section
-                .is-flex.is-row-flexed.is-centered-flex
-                    .is-flex.is-col-flexed.is-flexed-to-start
-                        h2.title.is-3.is-serif.has-text-centered Joey: Junior App Developer
+        .container
+            .is-flex.is-around.flex-wrap.has-slight-radius.has-background-black.shadowed
+                .is-flex.is-row-flexed.is-centered-flex.flex-wrap
+                    .is-flex.is-col-flexed.is-flexed-to-start.align-self.flex-wrap
+                        h2.title.is-3.is-serif.has-text-centered Joey Abouharb
                         h3.subtitle.is-5.has-text-centered
-                            | Security Bootcamp Dip.
-                            <br/> @Coderacademy
+                            | .NET Full Stack Developer
+                            <br/> @Pen CS
                     .has-padding-left
                         figure.image.img-size
                             img.is-rounded.shadowed(
                                 src="../res/img/profile-new.jpg"
                                 alt="profile pic")
-                pre.shadowed.disable-selection.has-margin-top
+                pre.shadowed.disable-selection.has-margin-top.has-margin-bottom
                     code.hljs
-                        | const site_map = () =&gt; {
+                        | const #[span.has-text-primary site_map] = () =&gt; {
                         |   return {
-                        |     #[span about:] #[a.has-text-light(href="about"+ext) () =&gt; about,]
-                        |     #[span blog:] #[a.has-text-light(href="blog"+ext) () =&gt; blog,]
-                        |     #[span projects:] #[a.has-text-light(href="projects"+ext) () =&gt; projects,]
-                        |     #[span contact:]  #[a.has-text-light(href="about"+ext+"#contact") () =&gt; contact,]
+                        |     #[span about:] #[a.link.pre-link(href="about"+ext) () =&gt; about,]
+                        |     #[span blog:] #[a.link.pre-link(href="blog"+ext) () =&gt; blog,]
+                        |     #[span projects:] #[a.link.pre-link(href="projects"+ext) () =&gt; projects,]
+                        |     #[span contact:]  #[a.link.pre-link(href="about"+ext+"#contact") () =&gt; contact,]
                         |   };
                         | };
-                        | const roles = () =&gt; {
+                        | const #[span.has-text-primary roles] = () =&gt; {
                         |   return [
-                        |     'Full-Stack',
+                        |     'Windows Application Development'
+                        |     'Business Intelligence / Reporting'
                         |     'Server Stack and API Development',
                         |     'Linux / Windows',
-                        |     'Scripting',
-                        |     'Security and Testing',
+                        |     'Shell Scripting (Bash / Powershell)',
+                        |     'Security and Application Testing',
                         |     'Front-End Design',
                         |     ];
                         |};
-            .section
     script(
         src="../res/js/highlight.js" defer
     )

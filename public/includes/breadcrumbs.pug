@@ -1,7 +1,7 @@
 mixin breadcrumbs(id, ...crumbs)
-    nav.breadcrumb.has-padding(aria-label="breadcrumbs")
+    nav.breadcrumb.shadowed.has-slight-radius.has-padding(aria-label="breadcrumbs")
         ul(id=id)
             each item in crumbs
                 li.crumbs
-                    a.crumb-link(href='./'+item+ext)=item
+                    a.link.crumb-link(href='./'+item+ext)=item
 
