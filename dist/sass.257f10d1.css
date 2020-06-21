@@ -6780,6 +6780,18 @@ a.navbar-item:hover {
   color: #209cee !important;
 }
 
+.blink-me {
+  animation: blinker 1s linear infinite;
+  background-color: #9eff9a;
+  width: 10px;
+  height: 2px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 /* flex helpers */
 .is-stretched {
   flex: 1;
@@ -6829,6 +6841,11 @@ a.navbar-item:hover {
 .is-centered-flex {
   justify-content: center;
   align-items: center;
+}
+
+.is-bottom {
+  align-self: flex-end;
+  justify-self: end;
 }
 
 @media screen and (min-width: 475px) {
@@ -7005,17 +7022,14 @@ strong {
   letter-spacing: 0.5px;
   position: relative;
   line-height: 1.4em;
-  font-size: 1.03rem;
   padding: 50px;
   list-style: none;
   text-align: left;
   font-weight: 100;
-  max-width: 60%;
+  max-width: 52%;
 }
 .timeline .timeline_item {
-  letter-spacing: 1.5px;
   font-weight: 100;
-  font-size: 1.4em;
 }
 .timeline .event {
   border-bottom: 1px dashed fade(white, 10%);

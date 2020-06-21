@@ -132,3 +132,14 @@ a.navbar-item
     &:hover
         background-color: $light !important
         color: $info !important
+
+
+.blink-me
+  animation: blinker 1s linear infinite
+  background-color: $white
+  width: 10px
+  height: 2px
+
+@keyframes blinker
+  50%
+    opacity: 0
