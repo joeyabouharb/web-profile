@@ -3,10 +3,7 @@ const helmet = require('helmet')
 const port = process.env.PORT || 3000;
 const host = process.env.HOST || 'localhost:';
 const app = express();
-
-app.use(express.static('dist'))
 app.use(helmet());
-
 app.use(helmet.contentSecurityPolicy({
     directives: {
         defaultSrc: ["'self'"],
@@ -16,11 +13,26 @@ app.use(helmet.contentSecurityPolicy({
         imgSrc: ["'self'", "https://cdn.jsdelivr.net"]
     }
 }))
+app.use(express.static('dist'))
+
+app.use((req, res) => {
+    res.status(404).send('404 Not Found 🤭');
+})
+
+app.use((err, req, res, next) => {
+    console.log(err)
+    if (err) {
+        console.log(err);
+        res.status(400).send('Bad Request... 🤭🤭🤭');
+      } else {
+        next();
+      }
+});
 
 app.listen(port, (err) => {
         if (err) {
             console.error(err);
             return process.exit(1);
         }
-        console.log(`Listening on: ${host}${port}`)
+        console.log(`Listening on: http://${host}${port}`)
     })
