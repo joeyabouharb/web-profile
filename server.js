@@ -8,7 +8,7 @@ app.use(helmet.contentSecurityPolicy({
     directives: {
         defaultSrc: ["'self'"],
         styleSrc: ["'self'", "https://fonts.googleapis.com"],
-        scriptSrc: ["'self'", "https://cdnjs.cloudflare.com/"],
+        scriptSrc: ["'self'", "https://cdnjs.cloudflare.com/", "https://ajax.cloudflare.com/"],
         fontSrc: ["'self'", "https://fonts.gstatic.com"],
         imgSrc: ["'self'", "https://cdn.jsdelivr.net"]
     }
