@@ -17,7 +17,7 @@
   "author": "joey abouharb",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "animate.css": "^3.7.2",
     "bulma": "^0.7.5",
     "compression": "^1.7.4",
