@@ -184,41 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../node_modules/animate.css/source/_vars.css":[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/animate.css/source/_base.css":[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/animate.css/source/sliding_entrances/slideInDown.css":[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/animate.css/source/sliding_exits/slideOutUp.css":[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/@fortawesome/fontawesome-free/css/all.min.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\webfonts\\fa-brands-400.eot":[["fa-brands-400.fdfe395a.eot","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot"],"./..\\webfonts\\fa-brands-400.woff2":[["fa-brands-400.d8fd1f09.woff2","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"],"./..\\webfonts\\fa-brands-400.woff":[["fa-brands-400.83e55726.woff","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff"],"./..\\webfonts\\fa-brands-400.ttf":[["fa-brands-400.b28b6f6e.ttf","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"],"./..\\webfonts\\fa-brands-400.svg":[["fa-brands-400.2cc1c9e1.svg","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg"],"./..\\webfonts\\fa-regular-400.eot":[["fa-regular-400.169b078d.eot","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot"],"./..\\webfonts\\fa-regular-400.woff2":[["fa-regular-400.57fa45d8.woff2","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"],"./..\\webfonts\\fa-regular-400.woff":[["fa-regular-400.838ff4ef.woff","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff"],"./..\\webfonts\\fa-regular-400.ttf":[["fa-regular-400.e21dec3b.ttf","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"],"./..\\webfonts\\fa-regular-400.svg":[["fa-regular-400.6d37bf45.svg","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg"],"./..\\webfonts\\fa-solid-900.eot":[["fa-solid-900.2419300f.eot","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot"],"./..\\webfonts\\fa-solid-900.woff2":[["fa-solid-900.2d1e16b4.woff2","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"],"./..\\webfonts\\fa-solid-900.woff":[["fa-solid-900.4e803835.woff","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff"],"./..\\webfonts\\fa-solid-900.ttf":[["fa-solid-900.b73c1002.ttf","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"],"./..\\webfonts\\fa-solid-900.svg":[["fa-solid-900.1f78f563.svg","../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg"],"../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../res/sass/index.sass":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"../../../node_modules/animate.css/source/_vars.css":"../../node_modules/animate.css/source/_vars.css","../../../node_modules/animate.css/source/_base.css":"../../node_modules/animate.css/source/_base.css","../../../node_modules/animate.css/source/sliding_entrances/slideInDown.css":"../../node_modules/animate.css/source/sliding_entrances/slideInDown.css","../../../node_modules/animate.css/source/sliding_exits/slideOutUp.css":"../../node_modules/animate.css/source/sliding_exits/slideOutUp.css","../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css":"../../node_modules/@fortawesome/fontawesome-free/css/all.min.css","_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -246,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62583" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57793" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -423,4 +389,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/sass.257f10d1.js.map
+//# sourceMappingURL=/projects.js.map

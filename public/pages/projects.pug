@@ -8,10 +8,10 @@ block content
             h2.title.override-title-color.is-3.has-margin-top.has-text-centered Projects
             #button-selectors.is-flex.is-row-flexed.justify-evenly.has-radius.has-slight-radius.has-margin-bottom
             #button-selector.is-flex.is-row-flexed
-            .siema.has-background-black.has-radius.has-slight-radius.shadowed
-                .project.card.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin-top
+            .siema.container
+                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin.shadowed
                     figure.has-padding
-                        img#demo0.has-slight-radius.image.project-demo(src='../res/img/card-game.webp' alt='card game')
+                        img#demo0.has-slight-radius.image.project-demo(loading="lazy" src='../res/img/card-game.webp' alt='card game')
                         h3.title.is-4.has-text-centered
                             | Card Game: Idiot
                     .card-body
@@ -19,9 +19,9 @@ block content
                             | Card game prototyped in Python and playable through Terminal
                         div.is-flex.is-centered-flex
                             a.button.is-primary.has-text-dark(href="#") Source
-                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin-top
+                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin.shadowed
                     figure.has-padding
-                        img#demo1.has-slight-radius.image.project-demo(src='../res/img/bank-app.webp' alt='Banking App')
+                        img#demo1.has-slight-radius.image.project-demo(loading="lazy" src='../res/img/bank-app.webp' alt='Banking App')
                         h3.title.is-4.has-text-centered
                             | Banking App
                     .card-body
@@ -30,18 +30,18 @@ block content
                             | Login, withdraw, check balance and deposit into your account!
                         .is-flex.is-centered-flex
                             a.button.is-primary.has-text-dark(href="#") Source
-                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin-top
+                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin.shadowed
                     figure.has-padding
-                        img#demo2.has-slight-radius.image.project-demo(src='../res/img/mock-data.webp' alt='mock data app')
+                        img#demo2.has-slight-radius.image.project-demo(loading="lazy" src='../res/img/mock-data.webp' alt='mock data app')
                         h3.title.is-4.has-text-centered
                             | Seed Data
                     .card-body
                         p.has-padding-left.has-padding-right.scale-content Python Script to help with generating and seeding a database
                         div.is-flex.is-centered-flex
                             a.button.is-primary.has-text-dark(href="#") Source
-                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin-top
+                .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin.shadowed
                     figure.has-padding
-                        img#demo3.has-slight-radius.image.project-demo(src='../res/img/quiz-proj.webp' alt='quiz')
+                        img#demo3.has-slight-radius.image.project-demo(loading="lazy" src='../res/img/quiz-proj.webp' alt='quiz')
                         h3.title.is-4.has-text-centered
                             | Quiz!
                     .card-body
@@ -50,5 +50,6 @@ block content
                             | Asks 10 questions from a list of 20, randomly chosen!
                         div.is-flex.is-centered-flex
                             a.button.is-primary.has-text-dark(href="#") Source
-
+            .container.is-fluid
+                #playback.is-flex.is-centered-flex
     script(src="../res/js/carousel.js")

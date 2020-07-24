@@ -131,30 +131,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (function () {
   // New siema instance
   var imgArr = ['/ezgif-2-aade6c3074bf.webp', '/bank-app.webp', '/mock-data.webp', '/quiz-proj.webp'];
-  var auto = {
-    mySiema: null,
-    value: 0,
-    start: function start() {
-      var _this = this;
-
-      this.value = setInterval(function () {
-        return _this.mySiema.next();
-      }, 7000);
-    },
-    stop: function stop() {
-      clearInterval(this.value);
-    }
-  };
   var mySiema = new _siema.default({
-    loop: true,
-    onChange: function onChange() {
-      auto.stop();
-      auto.start();
-    }
+    loop: true
   });
+  var play = '<i class="far fa-play-circle"></i>';
+  var pause = '<i class="fas fa-pause"></i>';
 
   _siema.default.prototype.addPagination = function () {
-    var _this2 = this;
+    var _this = this;
 
     this.navigationButtons = document.getElementById('button-selectors');
     this.prevArrow = document.createElement('button');
@@ -169,10 +153,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       btn.textContent = i + 1;
       btn.classList.add('button', 'is-primary', 'has-text-dark', 'has-slight-radius', 'button-even', 'shadowed');
       btn.addEventListener('click', function () {
-        _this2.goTo(i);
+        _this.goTo(i);
       });
 
-      _this2.navigationButtons.appendChild(btn);
+      _this.navigationButtons.appendChild(btn);
     };
 
     for (var i = 0; i < this.innerElements.length; i++) {
@@ -182,17 +166,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     this.nextArrow.classList.add('button', 'is-dark', 'has-text-black', 'has-slight-radius', 'shadowed', 'align-self');
     this.navigationButtons.appendChild(this.nextArrow);
     this.prevArrow.addEventListener('click', function () {
-      _this2.prev();
+      _this.prev();
     });
     this.nextArrow.addEventListener('click', function () {
-      _this2.next();
+      _this.next();
     });
-  }; // Trigger pagination creator
+  };
 
-
-  auto.mySiema = mySiema;
-  auto.start();
-  mySiema.addPagination(); // mySiema.addArrows();
+  mySiema.addPagination();
 })();
 },{"siema":"../../node_modules/siema/dist/siema.min.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -222,7 +203,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56989" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62583" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

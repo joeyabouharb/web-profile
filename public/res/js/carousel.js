@@ -2,21 +2,12 @@
 import Siema from "siema"
 (() => {
     // New siema instance
-  const imgArr = ['/ezgif-2-aade6c3074bf.webp', '/bank-app.webp', '/mock-data.webp', '/quiz-proj.webp']
-  const auto = {
-    mySiema: null,
-    value: 0,
-    start:  function (){ this.value = setInterval(() => this.mySiema.next(), 7000); },
-    stop: function () { clearInterval(this.value) },
-  }
+  const imgArr = ['/ezgif-2-aade6c3074bf.webp', '/bank-app.webp', '/mock-data.webp', '/quiz-proj.webp'];
   const mySiema = new Siema({
     loop: true,
-    onChange: () => {
-      auto.stop();
-      auto.start();
-    }
   });
-
+const play = '<i class="far fa-play-circle"></i>';
+const pause = '<i class="fas fa-pause"></i>';
 Siema.prototype.addPagination = function () {
   this.navigationButtons = document.getElementById('button-selectors');
   this.prevArrow = document.createElement('button');
@@ -44,10 +35,5 @@ Siema.prototype.addPagination = function () {
     this.next();
   });
 }
-// Trigger pagination creator
-auto.mySiema = mySiema;
-auto.start();
 mySiema.addPagination();
-// mySiema.addArrows();
-
 })();

@@ -7115,9 +7115,17 @@ strong {
   background-color: #EDE1FA;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .project {
   background-color: transparent;
   cursor: pointer;
+  min-height: 65vh;
 }
 
 .project-demo {
@@ -7128,6 +7136,9 @@ strong {
 
 .card-body {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   flex: 1;
 }
 .card-body > .button {
