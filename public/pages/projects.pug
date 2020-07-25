@@ -1,14 +1,15 @@
 extends ../layouts/layout
 block content
-    main.section
+    .section-desktop
+    main.section-desktop
         include ../includes/breadcrumbs
         .has-margin-top.has-background-black.has-slight-radius
             +breadcrumbs('breadcrumbs', 'index', 'projects')
-        section.has-margin-bottom.container.is-fluid
+        section.has-margin-bottom
             h2.title.override-title-color.is-3.has-margin-top.has-text-centered Projects
             #button-selectors.is-flex.is-row-flexed.justify-evenly.has-radius.has-slight-radius.has-margin-bottom
             #button-selector.is-flex.is-row-flexed
-            .siema.container
+            .siema.container.is-fluid
                 .project.card.has-background-black.is-flex.is-row-flexed.has-slight-radius.is-between.has-margin.shadowed
                     figure.has-padding
                         img#demo0.has-slight-radius.image.project-demo(loading="lazy" src='../res/img/card-game.webp' alt='card game')
