@@ -27,7 +27,7 @@
     "fs-extra": "^8.1.0",
     "headroom.js": "^0.9.4",
     "helmet": "^3.23.1",
-    "highlight.js": "^9.18.1",
+    "highlight.js": "^10.4.0",
     "install": "^0.13.0",
     "pug": "^2.0.4",
     "sass": "^1.26.8",
